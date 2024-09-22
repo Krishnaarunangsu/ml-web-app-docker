@@ -17,7 +17,6 @@ target = raw_df.values[1::2, 2]
 # Adjusted column indices for RM, PTRATIO, and LSTAT
 selected_features = data[:, [5, 10, 12]]
 
-# Split the dataset
 X_train, X_test, y_train, y_test = train_test_split(selected_features, target, test_size=0.2, random_state=42)
 
 # Train the Linear Regression model
